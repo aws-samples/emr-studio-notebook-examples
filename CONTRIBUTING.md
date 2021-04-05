@@ -53,7 +53,7 @@ As an official learning resource, it is important that any new examples add valu
 * The example must have a `Prerequisites` markdown that lists the installations required before executing the notebook as is attached to a cluster. For eg: EMR applications required like Hive, Presto, etc.
 * The example must have an `Introduction` markdown that explains the basics of the topics covered in the notebook. The introduction should include links to relevant aws public docs and data sets used in the notebook.
 * Every `code cell` must be preceded by a `markdown cell` that clearly explains the following code cell in detail and provides any additional usage or information.
-* Text portions of notebooks should follow the AWS Style Guide (https://alpha-docs-aws.amazon.com/awsstyleguide/latest/styleguide/Welcome.html) and guidelines for service names. (https://w.amazon.com/bin/view/AWSDocs/editing/service-names/)
+* Text portions of notebooks should follow the [AWS Style Guide](https://alpha-docs-aws.amazon.com/awsstyleguide/latest/styleguide/Welcome.html) and guidelines for [service names](https://w.amazon.com/bin/view/AWSDocs/editing/service-names/).
 * Assume only the knowledge that a beginner data scientist would have. Don’t assume that the reader is an experienced coder or has a rigorous technical background.
 
 ### Code Cells Structure
