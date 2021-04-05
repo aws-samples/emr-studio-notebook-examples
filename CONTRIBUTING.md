@@ -39,6 +39,35 @@ To send us a pull request, please:
 GitHub provides additional document on [forking a repository](https://help.github.com/articles/fork-a-repo/) and
 [creating a pull request](https://help.github.com/articles/creating-a-pull-request/).
 
+## Adding an Example
+
+Any new example must be added in the `examples` directory.
+When adding a new example, there are several things to consider as you implement:
+
+### Added Value
+As an official learning resource, it is important that any new examples add value to our learning resources. This means that it should not duplicate an existing example.
+
+### Introduction Structure
+
+* The example must have a descriptive `file name` and `title` that clearly defines it’s usage and the `topics` that it would cover. Follow a file naming pattern - feature/function`-`app/lib.ipynb
+* The example must have a `Prerequisites` markdown that lists the installations required before executing the notebook as is attached to a cluster. For eg: EMR applications required like Hive, Presto, etc.
+* The example must have an `Introduction` markdown that explains the basics of the topics covered in the notebook. The introduction should include links to relevant aws public docs and data sets used in the notebook.
+* Every `code cell` must be preceded by a `markdown cell` that clearly explains the following code cell in detail and provides any additional usage or information.
+* Text portions of notebooks should follow the AWS Style Guide (https://alpha-docs-aws.amazon.com/awsstyleguide/latest/styleguide/Welcome.html) and guidelines for service names. (https://w.amazon.com/bin/view/AWSDocs/editing/service-names/)
+* Assume only the knowledge that a beginner data scientist would have. Don’t assume that the reader is an experienced coder or has a rigorous technical background.
+
+### Code Cells Structure
+
+* The example should not contain any sensitive information like security groups/subnets, passwords, etc in any of the code or markdown cells.
+* The kernel that you use to write your notebook must be named exactly the same as one of the default kernels that ships with EMR notebooks. The best way to avoid this problem is to actually author your notebook file within a EMR Notebook.
+* It's preferred that the cell outputs be left empty. Use `Edit` and `Clear All` before submitting a PR.
+
+### Testing
+The example must be tested using an EMR Notebook and should have successfully run when attached to a cluster.
+
+### Style and Formatting
+We strive to keep all the examples consistent in style and formatting and as idiomatic as possible. This hopefully makes navigating examples easier for users.
+
 
 ## Finding contributions to work on
 Looking at the existing issues is a great way to find something to contribute on. As our projects, by default, use the default GitHub issue labels (enhancement/bug/duplicate/help wanted/invalid/question/wontfix), looking at any 'help wanted' issues is a great place to start.
