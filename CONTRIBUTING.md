@@ -61,6 +61,7 @@ As an official learning resource, it is important that any new examples add valu
 * The example should not contain any sensitive information like security groups/subnets, passwords, etc in any of the code or markdown cells.
 * The kernel that you use to write your notebook must be named exactly the same as one of the default kernels that ships with EMR notebooks. The best way to avoid this problem is to actually author your notebook file within a EMR Notebook.
 * It's preferred that the cell outputs be left empty. Use `Edit` and `Clear All` before submitting a PR.
+* DO NOT include single quotes (```'```). This is due to a limitation with nbconvert.
 
 ### Testing
 The example must be tested using an EMR Notebook and should have successfully run when attached to a cluster.
